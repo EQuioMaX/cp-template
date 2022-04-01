@@ -5,6 +5,6 @@ int main() {
   cp::println(42);
   cp::println(false);
   cp::println('c');
-  cp::println(3.14)
+  cp::println(3.14);
   return 0;
 }
