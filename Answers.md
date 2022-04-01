@@ -6,7 +6,7 @@ Yes
 
 ## Q. 2
 
-(erase this line and write your answer here)
+Yes
 
 ## Q. 3
 
