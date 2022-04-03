@@ -5,6 +5,8 @@ services:
     image: amd64/gcc:11.2.0-bullseye # Dockerfile (case sensitive) relative location from which container made
     volumes: 
       - ..:/usr/src/assignment # mounting of type bind but in relative(to .yml) path style
+    working_dir:
+    context:
     stdin_open: true # docker run -i
     tty: true        # docker run -t
     command: bash
