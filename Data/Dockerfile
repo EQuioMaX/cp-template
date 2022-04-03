@@ -1,5 +1,5 @@
 # FROM ubuntu:latest
-FROM gcc:latest
+FROM amd64/gcc:11.2.0-bullseye
 
 # COPY . /usr/src/cpp_test
 
