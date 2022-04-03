@@ -1,4 +1,5 @@
-My first program.42
+My first program.
+42
 false
 c
 3.14
