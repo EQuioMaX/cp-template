@@ -1,7 +1,7 @@
 version: '3'
 services:
   assignment-container:
-    image: f20180196/csf111-cp:0.1
+    image: f20180196/csf111-cp:0.2
     volumes: 
       - ..:/usr/src/assignment # mounting of type bind but in relative(to .yml) path style
     working_dir: /usr/src/assignment
@@ -10,7 +10,5 @@ services:
     entrypoint: ["/bin/bash", "-c"]
     command:
     - |
-      apt-get update
-      apt-get install -y clang lld
       bash
-    container_name: A1 # container name will be exactly this
+    container_name: csf111-template # container name will be exactly this
