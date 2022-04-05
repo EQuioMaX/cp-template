@@ -1,5 +1,0 @@
-main.cpp:7:19: error: expected ';' after expression
-  cp::println('c')
-                  ^
-                  ;
-1 error generated.
