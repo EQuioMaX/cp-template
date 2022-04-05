@@ -9,6 +9,8 @@ services:
     stdin_open: true # docker run -i
     tty: true        # docker run -t
     command:
+    - /bin/bash
+    - -c
     - |
       apt-get update
       apt-get install -y clang
