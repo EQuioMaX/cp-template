@@ -14,6 +14,3 @@ services:
       apt-get install -y clang lld
       bash
     container_name: A1 # container name will be exactly this
-    
-     # 
-      #
