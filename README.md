@@ -10,4 +10,5 @@
 
 ## Changes to makefile
 - Removed custom library and include paths since the cp-library is available at default paths in the docker image
-- Headers available at /
+- Headers available at /usr/local/include/cp
+- Library available at /usr/local/lib
