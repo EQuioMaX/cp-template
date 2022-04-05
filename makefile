@@ -19,9 +19,7 @@ run: $(PROG)
 	./$(PROG) > $(OUTPUT)
 
 $(PROG): $(MAIN).cpp
-	$(CXX) $(MAIN).cpp \
-		$(CXXFLAGS) $(LDFLAGS) -l$(LIB) -o $(PROG) \
-		> $(ERRORS) 2>&1
+	$(CXX) $(MAIN).cpp $(CXXFLAGS) $(LDFLAGS) -l$(LIB) -o $(PROG) > $(ERRORS) 2>&1
 
 
 clean: 
