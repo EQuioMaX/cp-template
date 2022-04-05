@@ -14,13 +14,12 @@ OUTPUT = output.txt
 PROG = lab02
 MAIN = main
 LIB = cp
-LIBPATH = ./cp-0.1.0-Linux
 
 run: $(PROG)		
 	./$(PROG) > $(OUTPUT)
 
 $(PROG): $(MAIN).cpp
-	$(CXX) -L$(LIBPATH)/lib/ $(MAIN).cpp -I$(LIBPATH)/include/ \
+	$(CXX) $(MAIN).cpp \
 		$(CXXFLAGS) $(LDFLAGS) -l$(LIB) -o $(PROG) \
 		> $(ERRORS) 2>&1
 
