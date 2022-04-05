@@ -10,8 +10,6 @@ services:
     tty: true        # docker run -t
     entrypoint: ["/bin/bash", "-c"]
     command:
-    - /bin/bash
-    - -c
     - |
       apt-get update
       apt-get install -y clang
