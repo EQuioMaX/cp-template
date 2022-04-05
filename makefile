@@ -1,4 +1,4 @@
-CXX = g++
+CXX = clang++
 CXXFLAGS = -g -O2 -Wall -std=c++20 -fconcepts-ts
 ERRORS = errors.txt
 OUTPUT = output.txt
@@ -12,7 +12,7 @@ run: $(PROG)
 	./$(PROG) > $(OUTPUT)
 
 $(PROG): $(MAIN).cpp
-	g++ -L$(LIBPATH)/lib/ $(MAIN).cpp -I$(LIBPATH)/include/ \
+	clang++ -L$(LIBPATH)/lib/ $(MAIN).cpp -I$(LIBPATH)/include/ \
 		$(CXXFLAGS) -l$(LIB) -o $(PROG) \
 		> $(ERRORS) 2>&1
 
