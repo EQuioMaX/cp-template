@@ -1,5 +1,5 @@
 CXX = clang++
-CXXFLAGS = -g -O2 -Wall -std=c++20 -fconcepts-ts
+CXXFLAGS = -g -O2 -Wall -std=c++20
 ERRORS = errors.txt
 OUTPUT = output.txt
 
