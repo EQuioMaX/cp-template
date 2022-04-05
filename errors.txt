@@ -1,7 +1,0 @@
-main.cpp: In function 'int main()':
-main.cpp:7:16: error: expected ';' before 'cp'
-    7 |   cp::println()
-      |                ^
-      |                ;
-    8 |   cp::println(3.14);
-      |   ~~            
