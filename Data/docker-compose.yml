@@ -8,6 +8,7 @@ services:
     working_dir: /usr/src/assignment
     stdin_open: true # docker run -i
     tty: true        # docker run -t
+    entrypoint: ["/bin/bash", "-c"]
     command:
     - /bin/bash
     - -c
