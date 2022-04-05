@@ -10,8 +10,10 @@ services:
     entrypoint: ["/bin/bash", "-c"]
     command:
     - |
+      apt-get update
+      apt-get install -y clang lld
       bash
     container_name: A1 # container name will be exactly this
     
-     # apt-get update
-      #apt-get install -y clang lld
+     # 
+      #
