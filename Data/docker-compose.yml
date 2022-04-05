@@ -7,8 +7,5 @@ services:
     working_dir: /usr/src/assignment
     stdin_open: true # docker run -i
     tty: true        # docker run -t
-    entrypoint: ["/bin/bash", "-c"]
-    command:
-    - |
-      bash
+    entrypoint: ["/bin/bash"]
     container_name: csf111-template # container name will be exactly this
